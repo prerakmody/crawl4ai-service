@@ -136,6 +136,11 @@ async def crawl(request: CrawlRequest):
     return {"results": results}
 
 
+@app.get("/")
+async def root():
+    pass
+
+
 @app.get("/health")
 async def health():
     return {"status": "ok"}
